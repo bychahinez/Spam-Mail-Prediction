@@ -29,6 +29,34 @@
   - ✅ **Accuracy on test data:** 96.68%
 
     ---
+    ## 🧾 Code Structure
+
+1. **Importing libraries**  
+   – `pandas`, `sklearn`, `TfidfVectorizer`, `LogisticRegression`, etc.
+
+2. **Data Loading & Preprocessing**  
+   – Load `mail_data.csv`  
+   – Replace missing values with empty strings  
+   – Encode `spam` as `0`, `ham` as `1`  
+
+3. **Splitting the Dataset**  
+   – Train/test split (80% / 20%)  
+
+4. **Feature Extraction**  
+   – Apply **TF-IDF Vectorization** to convert emails into numerical form  
+
+5. **Model Training**  
+   – Train a **Logistic Regression** model using the feature vectors  
+
+6. **Model Evaluation**  
+   – Predict on both training and test data  
+   – Print accuracy and show the **confusion matrix** using `seaborn`  
+
+7. **Prediction System**  
+   – Allow the user to input an email and predict if it's **spam or ham**
+
+---
+
 ## 🔗 Run on Google Colab
 
 👉 [Click here to open the notebook in Colab](https://colab.research.google.com/drive/10ZbbZZUc-Vb8uWWXNU6uGSsFCj3wqb5U?usp=sharing)
